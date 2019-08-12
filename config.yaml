@@ -1,0 +1,60 @@
+en:
+  features:
+  - title: Namespace strategies
+    summary: I may not have gone where I intended to go, but I think I have ended up where I needed to be.
+    link: https://scm-manager.org
+  - title: Permission
+    summary: I love deadlines. I love the whooshing noise they make as they go by.
+    link: https://scm-manager.org
+  - title: Create branches
+    summary: The story so far. In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.
+    link: https://scm-manager.org
+
+  plugins:
+  - title: LDAP
+    summary: I refuse to answer that question on the grounds that I don't know the answer.
+    link: https://scm-manager.org
+  - title: Review
+    summary: >
+      For instance, on the planet Earth, 
+      man had always assumed that he was more intelligent than dolphins because he had achieved so much—the wheel, 
+      New York, wars and so on—whilst all the dolphins had ever done was muck about in the water having a good time. 
+      But conversely, the dolphins had always believed that they were far more intelligent than man—for precisely the same reasons.
+    link: https://scm-manager.org
+  - title: Script
+    summary: >
+      There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, 
+      it will instantly disappear and be replaced by something even more bizarre and inexplicable. 
+      There is another theory which states that this has already happened.
+    link: https://scm-manager.org
+
+de:
+  features:
+  - title: Namespace Strategien
+    summary: >
+      Durch Namespace Strategien kann der Pfad von Repositories beinflusst werden.
+      Der Namespace steht für die erste Ebene der Repository-Pfades, also "/namespace/name".
+      Neben dem Pfad hat der Namespace auch Einfluss auf die Ordnung der Repositories in der Übersicht.
+    link: https://scm-manager.org
+  - title: Berechtigungen
+    summary: Noch sind wir zwar keine gefährdete Art, aber es ist nicht so, daß wir nicht oft genug versucht hätten, eine zu werden.
+    link: https://scm-manager.org
+  - title: Branches erstellen
+    summary: Am Anfang wurde das Universum erschaffen. Das machte viele Leute sehr wütend und wurde allenthalben als Schritt in die falsche Richtung angesehen.
+    link: https://scm-manager.org
+
+  plugins:
+  - title: LDAP
+    summary: Das Leben, sagte Marvin schwermütig, hasse oder ignoriere es, lieben kannst du's nicht.
+    link:
+  - title: Review
+    summary: "Tief im Regenwald tat es das, was es im Regenwald normalerweise tut, nämlich regnen: daher der Name."
+    link: https://scm-manager.org
+  - title: Script
+    summary: >
+      Es gibt eine Theorie, die besagt, wenn jemals irgendwer genau herausfindet, 
+      wozu das Universum da ist und warum es da ist, 
+      dann verschwindet es auf der Stelle und wird durch noch etwas Bizarreres und Unbegreiflicheres ersetzt. 
+      - Es gibt eine andere Theorie, nach der das schon passiert ist.
+    link: https://scm-manager.org
+
