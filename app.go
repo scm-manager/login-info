@@ -3,6 +3,9 @@ package main
 import (
 	"encoding/json"
 	"github.com/gorilla/mux"
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promauto"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"golang.org/x/text/language"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
@@ -10,6 +13,15 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
+)
+
+var (
+	requestCounter = promauto.NewCounterVec(prometheus.CounterOpts{
+		Name: "scm_login_info_requests",
+		Help: "Total number of requests",
+	}, []string{
+		"lang",
+	})
 )
 
 type Configuration map[string]LocalizedLoginInfo
@@ -47,8 +59,9 @@ func main() {
 	configuration := readConfiguration()
 
 	r := mux.NewRouter()
-	r.HandleFunc("/api/v1/live", NewOkHandler())
-	r.HandleFunc("/api/v1/ready", NewOkHandler())
+	r.Handle("/metrics", promhttp.Handler())
+	r.HandleFunc("/live", NewOkHandler())
+	r.HandleFunc("/ready", NewOkHandler())
 	r.HandleFunc("/api/v1/login-info", NewLoginInfoHandler(configuration))
 
 	port := os.Getenv("PORT")
@@ -94,6 +107,8 @@ func NewLoginInfoHandler(configuration Configuration) http.HandlerFunc {
 			http.Error(w, "failed to find response language", 500)
 			return
 		}
+
+		requestCounter.WithLabelValues(tag.String()).Inc()
 
 		response := Response{
 			Feature: mapItem(pickRandom(info.Features)),
