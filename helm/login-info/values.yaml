@@ -25,7 +25,7 @@ ingress:
   hosts:
     - host: login-info.scm-manager.org
       paths:
-        - /
+        - /api
 
   tls:
     - secretName: login-info-tls-secret
