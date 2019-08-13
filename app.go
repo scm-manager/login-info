@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
@@ -58,11 +59,13 @@ type Response struct {
 func main() {
 	configuration := readConfiguration()
 
+	corsOpts := handlers.AllowedOrigins([]string{"*"})
+
 	r := mux.NewRouter()
 	r.Handle("/metrics", promhttp.Handler())
 	r.HandleFunc("/live", NewOkHandler())
 	r.HandleFunc("/ready", NewOkHandler())
-	r.HandleFunc("/api/v1/login-info", NewLoginInfoHandler(configuration))
+	r.Handle("/api/v1/login-info", handlers.CORS(corsOpts)(NewLoginInfoHandler(configuration)))
 
 	port := os.Getenv("PORT")
 	if port == "" {
