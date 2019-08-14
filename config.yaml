@@ -1,60 +1,91 @@
 en:
   features:
   - title: Namespace strategies
-    summary: I may not have gone where I intended to go, but I think I have ended up where I needed to be.
+    summary: >
+      The grouping of repositories can be changed by the applied namespace strategy.
+      You can choose between type of repository, username of creator, year of creation and custom.
+      Custom allows you to set a namespace for each repository.
     link: https://scm-manager.org
   - title: Permission
-    summary: I love deadlines. I love the whooshing noise they make as they go by.
+    summary: >
+      Permissions for users and groups can be set globally, individually for each repository or in a combination of both.
+      Global permissions can be set in the administration area and the individual permissions in the repository settings.
+      Choose the method that suites your needs. 
     link: https://scm-manager.org
   - title: Create branches
-    summary: The story so far. In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.
+    summary: >
+      New braches can be created directly in SCM-Manager.
+      Just go to the banches page of the repository navigation.
+    link: https://scm-manager.org
+  - title: Repository permissions
+    summary: >
+      It is possible to create individual roles for repository permissions.
+      You can choose between all availble actions in SCM-Manager to create exactly the roles that you need.
     link: https://scm-manager.org
 
   plugins:
   - title: LDAP
-    summary: I refuse to answer that question on the grounds that I don't know the answer.
-    link: https://scm-manager.org
-  - title: Review
     summary: >
-      For instance, on the planet Earth, 
-      man had always assumed that he was more intelligent than dolphins because he had achieved so much—the wheel, 
-      New York, wars and so on—whilst all the dolphins had ever done was muck about in the water having a good time. 
-      But conversely, the dolphins had always believed that they were far more intelligent than man—for precisely the same reasons.
-    link: https://scm-manager.org
+      You do not have to use local SCM-Manager users only. The LDAP plugin allows you to connect SCM-Manager
+      to a directory service.
+    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
+  - title: Support
+    summary: >
+      The support plugin gathers log files and system information for you to make troubleshooting easier.
+      Once installed, it can easily be activated to gather information.
+    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
   - title: Script
     summary: >
-      There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, 
-      it will instantly disappear and be replaced by something even more bizarre and inexplicable. 
-      There is another theory which states that this has already happened.
-    link: https://scm-manager.org
+      The script plugin 2.0 now not only allows you to execute your scripts manually.
+      It also allows you to use hooks to execute scripts automatically.
+    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
+  - title: SSH
+    summary: >
+      The SSH plugin allows you to not only access your repositories via http, but also via ssh.
+      This allows you to use tokens as well as login credentials to access SCM-Manager.
+    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
 
 de:
   features:
   - title: Namespace Strategien
     summary: >
-      Durch Namespace Strategien kann der Pfad von Repositories beinflusst werden.
-      Der Namespace steht für die erste Ebene der Repository-Pfades, also "/namespace/name".
-      Neben dem Pfad hat der Namespace auch Einfluss auf die Ordnung der Repositories in der Übersicht.
+      Durch Namespaces kann die Sortierung der Repositories in der Übersicht beeinflusst werden.
+      Es kann zwischen Repository Typ, Usernamen des Erstellers, Erstellungsjahr und benutzerdefiniert gewählt werden.
+      Bei Benutzerdefiniert kann für jedes Repository individuell der Namespace eingestellt werden.
     link: https://scm-manager.org
   - title: Berechtigungen
-    summary: Noch sind wir zwar keine gefährdete Art, aber es ist nicht so, daß wir nicht oft genug versucht hätten, eine zu werden.
+    summary: >
+      Berechtigungen können global, je Repository oder als Kombination der beiden Wege vergeben werden.
+      Globale Berechtigungen werden im Administrationsbereich eingetragen. Repository-Berechtigungen in den Einstellungen der Repositories.
     link: https://scm-manager.org
   - title: Branches erstellen
-    summary: Am Anfang wurde das Universum erschaffen. Das machte viele Leute sehr wütend und wurde allenthalben als Schritt in die falsche Richtung angesehen.
+    summary: >
+      Neue Branches können direkt in SCM-Manager 2 auf der Branch Übersichtsseite erstellt werden.
+    link: https://scm-manager.org
+  - title: Repository Berechtigungen
+    summary: >
+      In SCM-Manager 2 können individuelle Rollen erstellt werden.
+      Dafür stehen alle Aktionen aus SCM-Manager zur Auswahl um die exakt passenden Rollen zu erstellen.
     link: https://scm-manager.org
 
   plugins:
   - title: LDAP
-    summary: Das Leben, sagte Marvin schwermütig, hasse oder ignoriere es, lieben kannst du's nicht.
-    link:
-  - title: Review
-    summary: "Tief im Regenwald tat es das, was es im Regenwald normalerweise tut, nämlich regnen: daher der Name."
-    link: https://scm-manager.org
+    summary: >
+      Man muss nicht nur lokale SCM-Manager Nutzer benutzen. Das LDAP Plugin ermöglicht es SCM-Manager an einen Verzeichnisdienst anzubinden.
+    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
+  - title: Support
+    summary: >
+      Das Support Plugin sammelt Log-Dateien und Systeminformationen um die Fehlersuche zu vereinfachen.
+      Sobald es installiert ist kann es ganz einfach aktiviert werden um die Informationen aufzuzeichnen.
+    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
   - title: Script
     summary: >
-      Es gibt eine Theorie, die besagt, wenn jemals irgendwer genau herausfindet, 
-      wozu das Universum da ist und warum es da ist, 
-      dann verschwindet es auf der Stelle und wird durch noch etwas Bizarreres und Unbegreiflicheres ersetzt. 
-      - Es gibt eine andere Theorie, nach der das schon passiert ist.
-    link: https://scm-manager.org
+      Das Script Plugin 2.0 ermöglicht es nicht nur Skripte manuell auszuführen.
+      Es bietet nun auch die Möglichkeit die Ausführung von Skripten durch Hooks zu automatisieren.
+    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
+  - title: SSH
+    summary: >
+      Das SSH Plugin erlaubt es Repositories nicht nur über http, sondern auch über ssh aufzurufen.
+      Dadurch können sie nicht nur mit Login Daten, sondern auch mit Tokens aufgerufen werden.
+    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
 
