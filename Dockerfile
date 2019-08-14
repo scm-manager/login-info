@@ -5,4 +5,5 @@ RUN GO111MODULE=on go build -a -tags netgo -ldflags '-w -extldflags "-static"' -
 
 FROM scratch
 COPY --from=builder /go/src/bitbucket.org/scm-manager/login-info/login-info /login-info
+USER 10000
 CMD ["/login-info"]

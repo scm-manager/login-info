@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: cloudogu/scm-login-info
-  tag: 0.4.0
+  repository: scmmanager/login-info
+  tag: 0.1.0
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
