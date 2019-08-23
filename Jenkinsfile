@@ -38,5 +38,18 @@ pipeline {
       }
     }
 
+    stage('Docker') {
+      steps {
+        script {
+          def commitHashShort = sh.returnStdOut "git log -1 --pretty=%B"
+          def version = "${new Date().format('yyyyMMddHHmm')}-${commitHashShort}"
+          image = docker.build("scmmanager/login-info:${version}")
+          docker.withRegistry('', 'hub.docker.com-cesmarvin') {
+            image.push()
+          }
+        }
+      }
+    }
+
   }
 }
