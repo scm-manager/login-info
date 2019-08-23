@@ -1,4 +1,6 @@
 #!/usr/bin/env groovy
+def version = 'UNKNOWN'
+
 pipeline {
 
   agent {
@@ -8,6 +10,15 @@ pipeline {
   }
 
   stages {
+
+    stage('Environment') {
+      steps {
+        script {
+          def commitHashShort = sh(returnStdout: true, script: 'git rev-parse --short HEAD')
+          version = "${new Date().format('yyyyMMddHHmm')}-${commitHashShort}".trim()
+        }
+      }
+    }
 
     stage('Build') {
       agent {
@@ -21,6 +32,7 @@ pipeline {
       }
       steps {
         sh 'go build -a -tags netgo -ldflags "-w -extldflags \'-static\'" -o target/login-info *.go'
+        stash name: 'target', includes: 'target/*'
       }
     }
 
@@ -40,11 +52,10 @@ pipeline {
 
     stage('Docker') {
       steps {
+        unstash 'target'
         script {
-          def commitHashShort = sh.returnStdOut "git log -1 --pretty=%B"
-          def version = "${new Date().format('yyyyMMddHHmm')}-${commitHashShort}"
-          image = docker.build("scmmanager/login-info:${version}")
           docker.withRegistry('', 'hub.docker.com-cesmarvin') {
+            def image = docker.build("scmmanager/login-info:${version}")
             image.push()
           }
         }
