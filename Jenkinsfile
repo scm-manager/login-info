@@ -1,6 +1,12 @@
 #!/usr/bin/env groovy
 pipeline {
-  agent any
+
+  agent {
+    node {
+      label 'docker'
+    }
+  }
+
   stages {
 
     stage('Build') {
@@ -9,8 +15,12 @@ pipeline {
           image 'golang:1.12.9'
         }
       }
+      environment {
+        // change go cache location
+        XDG_CACHE_HOME = "${WORKSPACE}/.cache"
+      }
       steps {
-        sh 'go build -a -tags netgo -ldflags "-w -extldflags \'-static\'" -o login-info *.go'
+        sh 'go build -a -tags netgo -ldflags "-w -extldflags \'-static\'" -o target/login-info *.go'
       }
     }
 
@@ -19,7 +29,7 @@ pipeline {
         scannerHome = tool 'sonar-scanner'
       }
       steps {
-        withSonarQubeEnv('sonarqube') {
+        withSonarQubeEnv('sonarcloud.io-scm') {
           sh "${scannerHome}/bin/sonar-scanner"
         }
         timeout(time: 10, unit: 'MINUTES') {
