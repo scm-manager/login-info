@@ -14,10 +14,6 @@ pipeline {
       }
     }
 
-    stage('Test') {
-      // todo run rests
-    }
-
     stage('Sonarqube') {
       environment {
         scannerHome = tool 'sonar-scanner'
