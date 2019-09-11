@@ -14,8 +14,8 @@ en:
     link: https://scm-manager.org
   - title: Create branches
     summary: >
-      New braches can be created directly in SCM-Manager.
-      Just go to the banches page of the repository navigation.
+      New branches can be created directly in SCM-Manager.
+      Just go to the branches page of the repository navigation.
     link: https://scm-manager.org
   - title: Repository permissions
     summary: >
