@@ -65,7 +65,7 @@ pipeline {
     stage('Deployment') {
       agent {
         docker {
-          image 'lachlanevenson/k8s-helm:v2.14.2'
+          image 'lachlanevenson/k8s-helm:v3.2.1'
           args  '--entrypoint=""'
         }
       }
