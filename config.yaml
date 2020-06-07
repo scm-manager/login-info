@@ -28,22 +28,22 @@ en:
     summary: >
       You do not have to use local SCM-Manager users only. The LDAP plugin allows you to connect SCM-Manager
       to a directory service.
-    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
+    link: https://scm-manager.org/plugins/scm-ldap-plugin/
   - title: Support
     summary: >
       The support plugin gathers log files and system information for you to make troubleshooting easier.
       Once installed, it can easily be activated to gather information.
-    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
+    link: https://scm-manager.org/plugins/scm-support-plugin/
   - title: Script
     summary: >
       The script plugin 2.0 now not only allows you to execute your scripts manually.
       It also allows you to use hooks to execute scripts automatically.
-    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
+    link: https://scm-manager.org/plugins/scm-script-plugin/
   - title: SSH
     summary: >
       The SSH plugin allows you to not only access your repositories via http, but also via ssh.
       This allows you to use tokens as well as login credentials to access SCM-Manager.
-    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
+    link: https://scm-manager.org/plugins/scm-ssh-plugin/
 
 de:
   features:
@@ -72,20 +72,20 @@ de:
   - title: LDAP
     summary: >
       Man muss nicht nur lokale SCM-Manager Nutzer benutzen. Das LDAP Plugin ermöglicht es SCM-Manager an einen Verzeichnisdienst anzubinden.
-    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
+    link: https://scm-manager.org/plugins/scm-ldap-plugin/
   - title: Support
     summary: >
       Das Support Plugin sammelt Log-Dateien und Systeminformationen um die Fehlersuche zu vereinfachen.
       Sobald es installiert ist kann es ganz einfach aktiviert werden um die Informationen aufzuzeichnen.
-    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
+    link: https://scm-manager.org/plugins/scm-support-plugin/
   - title: Script
     summary: >
       Das Script Plugin 2.0 ermöglicht es nicht nur Skripte manuell auszuführen.
       Es bietet nun auch die Möglichkeit die Ausführung von Skripten durch Hooks zu automatisieren.
-    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
+    link: https://scm-manager.org/plugins/scm-script-plugin/
   - title: SSH
     summary: >
       Das SSH Plugin erlaubt es Repositories nicht nur über http, sondern auch über ssh aufzurufen.
       Dadurch können sie nicht nur mit Login Daten, sondern auch mit Tokens aufgerufen werden.
-    link: https://plugins.scm-manager.org/scm-plugin-backend/page/index.html
+    link: https://scm-manager.org/plugins/scm-ssh-plugin/
 
