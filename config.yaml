@@ -1,91 +1,200 @@
 en:
   features:
-  - title: Namespace strategies
-    summary: >
-      The grouping of repositories can be changed by the applied namespace strategy.
-      You can choose between type of repository, username of creator, year of creation and custom.
-      Custom allows you to set a namespace for each repository.
-    link: https://scm-manager.org
-  - title: Permission
-    summary: >
-      Permissions for users and groups can be set globally, individually for each repository or in a combination of both.
-      Global permissions can be set in the administration area and the individual permissions in the repository settings.
-      Choose the method that suites your needs. 
-    link: https://scm-manager.org
-  - title: Create branches
-    summary: >
-      New branches can be created directly in SCM-Manager.
-      Just go to the branches page of the repository navigation.
-    link: https://scm-manager.org
-  - title: Repository permissions
-    summary: >
-      It is possible to create individual roles for repository permissions.
-      You can choose between all availble actions in SCM-Manager to create exactly the roles that you need.
-    link: https://scm-manager.org
+    - title: Namespace strategies
+      summary: >
+        The grouping of repositories can be changed by the applied namespace strategy.
+        You can choose between type of repository, username of creator, year of creation and custom.
+        Custom allows you to set an individual namespace for each repository.
+      link: https://www.scm-manager.org/docs/latest/en/user/admin/settings/#namespace-strategy
+    - title: Permission
+      summary: >
+        Permissions for users and groups can be set globally, individually for each repository or in a combination of both.
+        Global permissions can be set in the administration area and the individual permissions in the repository settings.
+        Choose the method that suites your needs.
+      link: https://scm-manager.org
+    - title: Create branches
+      summary: >
+        New branches can be created directly in SCM-Manager.
+        Just go to the branches page of the repository navigation.
+      link: https://www.scm-manager.org/docs/latest/en/user/repo/branches/
+    - title: Repository permissions
+      summary: >
+        It is possible to create individual roles for repository permissions.
+        You can choose between all available actions in SCM-Manager to create exactly the roles that you need.
+      link: https://www.scm-manager.org/docs/latest/en/user/admin/roles/
+    - title: API keys
+      summary: >
+        You don't have to create technical users for other systems like Jenkins.
+        Instead you can create API keys with a limited set of permissions.
+      link: https://www.scm-manager.org/docs/2.16.x/en/user/profile/#api-keys
+    - title: Pathbased Search
+      summary: >
+        Use the search button on top of the source tree view to quickly find your files or directories based on the path (but not the content) inside your repository.
+      link: https://www.scm-manager.org/docs/2.16.x/en/user/repo/code/#search
+    - title: Export/Import
+      summary: >
+        Use the export/import feature to transfer repositories including all metadata between SCM-Manager
+        instances or to import your favourite repository from another system just by
+        specifying the URL.
+      link: https://www.scm-manager.org/docs/2.16.x/en/user/repo/#import-a-repository
 
   plugins:
-  - title: LDAP
-    summary: >
-      You do not have to use local SCM-Manager users only. The LDAP plugin allows you to connect SCM-Manager
-      to a directory service.
-    link: https://scm-manager.org/plugins/scm-ldap-plugin/
-  - title: Support
-    summary: >
-      The support plugin gathers log files and system information for you to make troubleshooting easier.
-      Once installed, it can easily be activated to gather information.
-    link: https://scm-manager.org/plugins/scm-support-plugin/
-  - title: Script
-    summary: >
-      The script plugin 2.0 now not only allows you to execute your scripts manually.
-      It also allows you to use hooks to execute scripts automatically.
-    link: https://scm-manager.org/plugins/scm-script-plugin/
-  - title: SSH
-    summary: >
-      The SSH plugin allows you to not only access your repositories via http, but also via ssh.
-      This allows you to use tokens as well as login credentials to access SCM-Manager.
-    link: https://scm-manager.org/plugins/scm-ssh-plugin/
+    - title: LDAP
+      summary: >
+        You do not have to use local SCM-Manager users only. The LDAP plugin allows you to connect SCM-Manager
+        to a directory service.
+      link: https://scm-manager.org/plugins/scm-ldap-plugin/
+    - title: Support
+      summary: >
+        The support plugin gathers log files and system information for you to make troubleshooting easier.
+        Once installed, it can easily be activated to gather information.
+      link: https://scm-manager.org/plugins/scm-support-plugin/
+    - title: Script
+      summary: >
+        The script plugin 2.0 now not only allows you to execute your scripts manually.
+        It also allows you to use hooks to execute scripts automatically.
+      link: https://scm-manager.org/plugins/scm-script-plugin/
+    - title: SSH
+      summary: >
+        The SSH plugin allows you to not only access your repositories via http, but also via ssh.
+        This allows you to use tokens as well as login credentials to access SCM-Manager.
+      link: https://scm-manager.org/plugins/scm-ssh-plugin/
+    - title: Review
+      summary: >
+        The review plugin allows you to cover your peer review process including comments, tasks and approvals
+        up to the final merge for git repositories.
+      link: https://scm-manager.org/plugins/scm-review-plugin/
+    - title: Metrics
+      summary: >
+        The prometheus metrics plugin lets you gain insights for your SCM-Manager installation regarding http
+        requests, jvm metrics and much more (if you do not use Prometheus, there are other plugins to export
+        metrics otherwise).
+      link: https://scm-manager.org/plugins/scm-metrics-prometheus-plugin/
+    - title: Trace Monitor
+      summary: >
+        With help of the trace monitor plugin you will get a good overview about the outgoing http requests
+        of SCM-Manager, either to Jenkins, the plugin center, CAS, or whatsoever. A must-have for the
+        analysis of connection errors.
+      link: https://scm-manager.org/plugins/scm-trace-monitor-plugin/
+    - title: PlantUML
+      summary: >
+        If you are a fan of markdown and you are looking for a way to enrich your documents with
+        graphics, it would be worth taking a look at PlantUML and its integration into SCM-Manager.
+      link: https://scm-manager.org/plugins/scm-markdown-plantuml-plugin/
+    - title: Jenkins
+      summary: >
+        If you have a lot of repositories and an automated build pipeline, install the latest plugins
+        for SCM-Manager and Jenkins to get a perfect cooperation of these two with links, automatically
+        triggered builds and multibranch pipelines.
+      link: https://scm-manager.org/plugins/scm-jenkins-plugin/
+    - title: OpenAPI
+      summary: >
+        Automation often is the key to good processes. If you want to automate things in SCM-Manager, take
+        a look at our OpenAPI plugin. This gives you a documentation of the REST API for you individual
+        SCM-Manager installation including all installed plugins.
+      link: https://scm-manager.org/plugins/scm-openapi-plugin/
+    - title: Repository Templates
+      summary: >
+        Wouldn't it be great to create new repositories with a set of standard files? You can get this with
+        the repository template plugin. Create your own templates with a simple templating mechanism and never have
+        to add the same files over and over again.
+      link: https://scm-manager.org/plugins/scm-repository-template-plugin/
 
 de:
   features:
-  - title: Namespace Strategien
-    summary: >
-      Durch Namespaces kann die Sortierung der Repositories in der Übersicht beeinflusst werden.
-      Es kann zwischen Repository Typ, Usernamen des Erstellers, Erstellungsjahr und benutzerdefiniert gewählt werden.
-      Bei Benutzerdefiniert kann für jedes Repository individuell der Namespace eingestellt werden.
-    link: https://scm-manager.org
-  - title: Berechtigungen
-    summary: >
-      Berechtigungen können global, je Repository oder als Kombination der beiden Wege vergeben werden.
-      Globale Berechtigungen werden im Administrationsbereich eingetragen. Repository-Berechtigungen in den Einstellungen der Repositories.
-    link: https://scm-manager.org
-  - title: Branches erstellen
-    summary: >
-      Neue Branches können direkt in SCM-Manager 2 auf der Branch Übersichtsseite erstellt werden.
-    link: https://scm-manager.org
-  - title: Repository Berechtigungen
-    summary: >
-      In SCM-Manager 2 können individuelle Rollen erstellt werden.
-      Dafür stehen alle Aktionen aus SCM-Manager zur Auswahl um die exakt passenden Rollen zu erstellen.
-    link: https://scm-manager.org
+    - title: Namespace Strategien
+      summary: >
+        Durch Namespaces kann die Sortierung der Repositories in der Übersicht beeinflusst werden.
+        Es kann zwischen Repository Typ, Usernamen des Erstellers, Erstellungsjahr und benutzerdefiniert gewählt werden.
+        Bei Benutzerdefiniert kann für jedes Repository individuell der Namespace eingestellt werden.
+      link: https://www.scm-manager.org/docs/latest/de/user/admin/settings/#namespace-strategien
+    - title: Berechtigungen
+      summary: >
+        Berechtigungen können global, je Repository oder als Kombination der beiden Wege vergeben werden.
+        Globale Berechtigungen werden im Administrationsbereich eingetragen. Repository-Berechtigungen in den Einstellungen der Repositories.
+      link: https://scm-manager.org
+    - title: Branches erstellen
+      summary: >
+        Neue Branches können direkt in SCM-Manager 2 auf der Branch Übersichtsseite erstellt werden.
+      link: https://www.scm-manager.org/docs/latest/de/user/repo/branches/
+    - title: Repository Berechtigungen
+      summary: >
+        In SCM-Manager 2 können individuelle Rollen erstellt werden.
+        Dafür stehen alle Aktionen aus SCM-Manager zur Auswahl um die exakt passenden Rollen zu erstellen.
+      link: https://www.scm-manager.org/docs/latest/de/user/admin/roles/
+    - title: API Schlüssel
+      summary: >
+        Um externe System wie einen Jenkins zu berechtigen, müssen Sie nicht unbedingt technische Benutzer anlegen.
+        Stattdessen können Sie API Schlüssel mit einem begrenzenden Set an Berechtigungen erstellen.
+      link: https://www.scm-manager.org/docs/2.16.x/de/user/profile/#api-schl%C3%BCssel
+    - title: Pfadbasierte Suche
+      summary: >
+        Nutzen Sie die Suchfunktion im oberen Teil der Repository Code Übersicht, um Dateien oder Ordner anhand des Pfades (nicht inhaltlich) in Ihrem Repository zu suchen.
+      link: https://www.scm-manager.org/docs/2.16.x/de/user/repo/code/#dateinamen-suche
+    - title: Export/Import
+      summary: >
+        Nutzen Sie die Export-/Import-Funktion, um Repositories inklusive aller Metadaten zwischen SCM-Manager-Instanzen
+        zu übertragen oder Ihr Repository von einem anderen System zu importieren, indem Sie einfach die URL angeben.
+      link: https://www.scm-manager.org/docs/2.16.x/de/user/repo/#repository-importieren
 
   plugins:
-  - title: LDAP
-    summary: >
-      Man muss nicht nur lokale SCM-Manager Nutzer benutzen. Das LDAP Plugin ermöglicht es SCM-Manager an einen Verzeichnisdienst anzubinden.
-    link: https://scm-manager.org/plugins/scm-ldap-plugin/
-  - title: Support
-    summary: >
-      Das Support Plugin sammelt Log-Dateien und Systeminformationen um die Fehlersuche zu vereinfachen.
-      Sobald es installiert ist kann es ganz einfach aktiviert werden um die Informationen aufzuzeichnen.
-    link: https://scm-manager.org/plugins/scm-support-plugin/
-  - title: Script
-    summary: >
-      Das Script Plugin 2.0 ermöglicht es nicht nur Skripte manuell auszuführen.
-      Es bietet nun auch die Möglichkeit die Ausführung von Skripten durch Hooks zu automatisieren.
-    link: https://scm-manager.org/plugins/scm-script-plugin/
-  - title: SSH
-    summary: >
-      Das SSH Plugin erlaubt es Repositories nicht nur über http, sondern auch über ssh aufzurufen.
-      Dadurch können sie nicht nur mit Login Daten, sondern auch mit Tokens aufgerufen werden.
-    link: https://scm-manager.org/plugins/scm-ssh-plugin/
-
+    - title: LDAP
+      summary: >
+        Das LDAP Plugin ermöglicht es den SCM-Manager an einen Verzeichnisdienst anzubinden.
+        Damit können Sie zusätzlich zu den lokalen Benutzern noch weitere Benutzer hinzufügen.
+      link: https://scm-manager.org/plugins/scm-ldap-plugin/
+    - title: Support
+      summary: >
+        Das Support Plugin sammelt Log-Dateien und Systeminformationen um die Fehlersuche zu vereinfachen.
+        Sobald es installiert ist kann es ganz einfach aktiviert werden um die Informationen aufzuzeichnen.
+      link: https://scm-manager.org/plugins/scm-support-plugin/
+    - title: Script
+      summary: >
+        Das Script Plugin 2.0 ermöglicht es nicht nur Skripte manuell auszuführen.
+        Es bietet nun auch die Möglichkeit die Ausführung von Skripten durch Hooks zu automatisieren.
+      link: https://scm-manager.org/plugins/scm-script-plugin/
+    - title: SSH
+      summary: >
+        Das SSH Plugin erlaubt es Repositories nicht nur über http, sondern auch über ssh aufzurufen.
+        Dadurch können sie nicht nur mit Login Daten, sondern auch mit Tokens aufgerufen werden.
+      link: https://scm-manager.org/plugins/scm-ssh-plugin/
+    - title: Review
+      summary: >
+        Mithilfe des Review Plugins können komplexe Review Prozesse mit Kommentaren, Aufgaben und Zustimmungen
+        bis hin zum finalen Merge für Git Repositories abgebildet werden.
+      link: https://scm-manager.org/plugins/scm-review-plugin/
+    - title: Metriken
+      summary: >
+        Das Prometheus Metrik Plugin bietet Einsichten in eine SCM-Manager Installation bezüglich der HTTP-Requests,
+        der JVM Metriken und sehr viel mehr (wenn kein Prometheus genutzt wird, gibt es andere Plugins für andere
+        Methoden).
+      link: https://scm-manager.org/plugins/scm-metrics-prometheus-plugin/
+    - title: Trace Monitor
+      summary: >
+        Mithilfe des Trace Monitor Plugins erhält man eine gute Übersicht über ausgehende HTTP Anfragen eines
+        SCM-Manager, sei es zu Jenkins, dem Plugin Center, CAS oder allen anderen Systemen. Ein unentbehrliches
+        Hilfsmittel bei der Analyse von Verbindungsfehlern.
+      link: https://scm-manager.org/plugins/scm-trace-monitor-plugin/
+    - title: PlantUML
+      summary: >
+        Sind Sie ein Fan von Markdown und halten Ausschau nach einem Weg, Dokumente mit Grafiken anzureichern?
+        Dann lohnt ein Blick auf PlantUML und die Integration in den SCM-Manager.
+      link: https://scm-manager.org/plugins/scm-markdown-plantuml-plugin/
+    - title: Jenkins
+      summary: >
+        Für die Pflege mehrerer Repositories mit automatisierten Build-Pipelines lohnt die Installation der aktuellsten
+        Plugins für SCM-Manager and Jenkins, um ein perfektes Zusammenspiel zu erhalten: Links, automatisch gestartete
+        Builds und Multibranch Pipelines.
+      link: https://scm-manager.org/plugins/scm-jenkins-plugin/
+    - title: OpenAPI
+      summary: >
+        Automatisierung ist häufig ein Schlüssel für gute Prozesse. Zur Automatisierung von Abläufen im SCM-Manager lohnt ein
+        Blick auf das OpenAPI Plugin. Dieses dokumentiert die REST API für Ihre individuelle SCM-Manager Installation
+        und alle installierten Plugins.
+      link: https://scm-manager.org/plugins/scm-openapi-plugin/
+    - title: Repository Templates
+      summary: >
+        Wäre es nicht wunderbar, neue Repositories gleich mit einer Menge an standardisierten Dateien erstellen zu können?
+        Dieses kann mit dem Repository Template Plugin erreicht werden. Erstellen Sie Ihre eigenen Templates mit einem einfachen
+        Mechanismus und Sie müssen nie mehr Standarddateien erstellen.
+      link: https://scm-manager.org/plugins/scm-repository-template-plugin/
