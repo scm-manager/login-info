@@ -39,7 +39,7 @@ en:
       link: https://www.scm-manager.org/docs/2.16.x/en/user/repo/#import-a-repository
     - title: Command line client
       summary: >
-        Try the cli client for SCM-Manager to manage your repositories. It is available for all konds of operation systems.
+        Try the cli client for SCM-Manager to manage your repositories. It is available for all kinds of operation systems.
       link: https://scm-manager.org/cli/
 
   plugins:
