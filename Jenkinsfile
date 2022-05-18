@@ -23,7 +23,7 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image 'golang:1.12.9'
+          image 'golang:1.18.2'
         }
       }
       environment {
