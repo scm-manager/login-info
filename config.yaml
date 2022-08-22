@@ -2,8 +2,8 @@ en:
   features:
     - title: DevStarter
       summary: >
-        The alternative on-premises toolchain is the perfect enhacement for your SCM-Manager with Easy Redmine and BlueSpice for agile development teams.
-      link: https://partner.cloudogu.com/en/devstarter/
+        The alternative on-premises toolchain is the perfect enhancement for your SCM-Manager with Easy Redmine and BlueSpice for agile development teams.
+      link: https://partner.cloudogu.com/en/devstarter/?source=scmmtile
 #    - title: Namespace strategies
 #      summary: >
 #        The grouping of repositories can be changed by the applied namespace strategy.
@@ -113,7 +113,7 @@ de:
     - title: DevStarter
       summary: >
         Die alternative On-Premises Toolchain ist die perfekte Erweiterung des SCM-Managers mit Easy Redmine und BlueSpice für agile Entwicklungsteams.
-      link: https://partner.cloudogu.com/de/devstarter/
+      link: https://partner.cloudogu.com/de/devstarter/?source=scmmtile
 #    - title: Namespace Strategien
 #      summary: >
 #        Durch Namespaces kann die Sortierung der Repositories in der Übersicht beeinflusst werden.
