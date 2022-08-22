@@ -1,46 +1,50 @@
 en:
   features:
-    - title: Namespace strategies
+    - title: DevStarter
       summary: >
-        The grouping of repositories can be changed by the applied namespace strategy.
-        You can choose between type of repository, username of creator, year of creation and custom.
-        Custom allows you to set an individual namespace for each repository.
-      link: https://www.scm-manager.org/docs/latest/en/user/admin/settings/#namespace-strategy
-    - title: Permission
-      summary: >
-        Permissions for users and groups can be set globally, individually for each repository or in a combination of both.
-        Global permissions can be set in the administration area and the individual permissions in the repository settings.
-        Choose the method that suites your needs.
-      link: https://scm-manager.org
-    - title: Create branches
-      summary: >
-        New branches can be created directly in SCM-Manager.
-        Just go to the branches page of the repository navigation.
-      link: https://www.scm-manager.org/docs/latest/en/user/repo/branches/
-    - title: Repository permissions
-      summary: >
-        It is possible to create individual roles for repository permissions.
-        You can choose between all available actions in SCM-Manager to create exactly the roles that you need.
-      link: https://www.scm-manager.org/docs/latest/en/user/admin/roles/
-    - title: API keys
-      summary: >
-        You don't have to create technical users for other systems like Jenkins.
-        Instead you can create API keys with a limited set of permissions.
-      link: https://www.scm-manager.org/docs/2.16.x/en/user/profile/#api-keys
-    - title: Pathbased Search
-      summary: >
-        Use the search button on top of the source tree view to quickly find your files or directories based on the path (but not the content) inside your repository.
-      link: https://www.scm-manager.org/docs/2.16.x/en/user/repo/code/#search
-    - title: Export/Import
-      summary: >
-        Use the export/import feature to transfer repositories including all metadata between SCM-Manager
-        instances or to import your favourite repository from another system just by
-        specifying the URL.
-      link: https://www.scm-manager.org/docs/2.16.x/en/user/repo/#import-a-repository
-    - title: Command line client
-      summary: >
-        Try the cli client for SCM-Manager to manage your repositories. It is available for all kinds of operation systems.
-      link: https://scm-manager.org/cli/
+        The alternative on-premises toolchain is the perfect enhacement for your SCM-Manager with Easy Redmine and BlueSpice for agile development teams.
+      link: https://partner.cloudogu.com/en/devstarter/
+#    - title: Namespace strategies
+#      summary: >
+#        The grouping of repositories can be changed by the applied namespace strategy.
+#        You can choose between type of repository, username of creator, year of creation and custom.
+#        Custom allows you to set an individual namespace for each repository.
+#      link: https://www.scm-manager.org/docs/latest/en/user/admin/settings/#namespace-strategy
+#    - title: Permission
+#      summary: >
+#        Permissions for users and groups can be set globally, individually for each repository or in a combination of both.
+#        Global permissions can be set in the administration area and the individual permissions in the repository settings.
+#        Choose the method that suites your needs.
+#      link: https://scm-manager.org
+#    - title: Create branches
+#      summary: >
+#        New branches can be created directly in SCM-Manager.
+#        Just go to the branches page of the repository navigation.
+#      link: https://www.scm-manager.org/docs/latest/en/user/repo/branches/
+#    - title: Repository permissions
+#      summary: >
+#        It is possible to create individual roles for repository permissions.
+#        You can choose between all available actions in SCM-Manager to create exactly the roles that you need.
+#      link: https://www.scm-manager.org/docs/latest/en/user/admin/roles/
+#    - title: API keys
+#      summary: >
+#        You don't have to create technical users for other systems like Jenkins.
+#        Instead you can create API keys with a limited set of permissions.
+#      link: https://www.scm-manager.org/docs/2.16.x/en/user/profile/#api-keys
+#    - title: Pathbased Search
+#      summary: >
+#        Use the search button on top of the source tree view to quickly find your files or directories based on the path (but not the content) inside your repository.
+#      link: https://www.scm-manager.org/docs/2.16.x/en/user/repo/code/#search
+#    - title: Export/Import
+#      summary: >
+#        Use the export/import feature to transfer repositories including all metadata between SCM-Manager
+#        instances or to import your favourite repository from another system just by
+#        specifying the URL.
+#      link: https://www.scm-manager.org/docs/2.16.x/en/user/repo/#import-a-repository
+#    - title: Command line client
+#      summary: >
+#        Try the cli client for SCM-Manager to manage your repositories. It is available for all kinds of operation systems.
+#      link: https://scm-manager.org/cli/
 
   plugins:
     - title: LDAP
@@ -106,40 +110,44 @@ en:
 
 de:
   features:
-    - title: Namespace Strategien
+    - title: DevStarter
       summary: >
-        Durch Namespaces kann die Sortierung der Repositories in der Übersicht beeinflusst werden.
-        Es kann zwischen Repository Typ, Usernamen des Erstellers, Erstellungsjahr und benutzerdefiniert gewählt werden.
-        Bei Benutzerdefiniert kann für jedes Repository individuell der Namespace eingestellt werden.
-      link: https://www.scm-manager.org/docs/latest/de/user/admin/settings/#namespace-strategien
-    - title: Berechtigungen
-      summary: >
-        Berechtigungen können global, je Repository oder als Kombination der beiden Wege vergeben werden.
-        Globale Berechtigungen werden im Administrationsbereich eingetragen. Repository-Berechtigungen in den Einstellungen der Repositories.
-      link: https://scm-manager.org
-    - title: Branches erstellen
-      summary: >
-        Neue Branches können direkt in SCM-Manager 2 auf der Branch Übersichtsseite erstellt werden.
-      link: https://www.scm-manager.org/docs/latest/de/user/repo/branches/
-    - title: Repository Berechtigungen
-      summary: >
-        In SCM-Manager 2 können individuelle Rollen erstellt werden.
-        Dafür stehen alle Aktionen aus SCM-Manager zur Auswahl um die exakt passenden Rollen zu erstellen.
-      link: https://www.scm-manager.org/docs/latest/de/user/admin/roles/
-    - title: API Schlüssel
-      summary: >
-        Um externe System wie einen Jenkins zu berechtigen, müssen Sie nicht unbedingt technische Benutzer anlegen.
-        Stattdessen können Sie API Schlüssel mit einem begrenzenden Set an Berechtigungen erstellen.
-      link: https://www.scm-manager.org/docs/2.16.x/de/user/profile/#api-schl%C3%BCssel
-    - title: Pfadbasierte Suche
-      summary: >
-        Nutzen Sie die Suchfunktion im oberen Teil der Repository Code Übersicht, um Dateien oder Ordner anhand des Pfades (nicht inhaltlich) in Ihrem Repository zu suchen.
-      link: https://www.scm-manager.org/docs/2.16.x/de/user/repo/code/#dateinamen-suche
-    - title: Export/Import
-      summary: >
-        Nutzen Sie die Export-/Import-Funktion, um Repositories inklusive aller Metadaten zwischen SCM-Manager-Instanzen
-        zu übertragen oder Ihr Repository von einem anderen System zu importieren, indem Sie einfach die URL angeben.
-      link: https://www.scm-manager.org/docs/2.16.x/de/user/repo/#repository-importieren
+        Die alternative On-Premises Toolchain ist die perfekte Erweiterung des SCM-Managers mit Easy Redmine und BlueSpice für agile Entwicklungsteams.
+      link: https://partner.cloudogu.com/de/devstarter/
+#    - title: Namespace Strategien
+#      summary: >
+#        Durch Namespaces kann die Sortierung der Repositories in der Übersicht beeinflusst werden.
+#        Es kann zwischen Repository Typ, Usernamen des Erstellers, Erstellungsjahr und benutzerdefiniert gewählt werden.
+#        Bei Benutzerdefiniert kann für jedes Repository individuell der Namespace eingestellt werden.
+#      link: https://www.scm-manager.org/docs/latest/de/user/admin/settings/#namespace-strategien
+#    - title: Berechtigungen
+#      summary: >
+#        Berechtigungen können global, je Repository oder als Kombination der beiden Wege vergeben werden.
+#        Globale Berechtigungen werden im Administrationsbereich eingetragen. Repository-Berechtigungen in den Einstellungen der Repositories.
+#      link: https://scm-manager.org
+#    - title: Branches erstellen
+#      summary: >
+#        Neue Branches können direkt in SCM-Manager 2 auf der Branch Übersichtsseite erstellt werden.
+#      link: https://www.scm-manager.org/docs/latest/de/user/repo/branches/
+#    - title: Repository Berechtigungen
+#      summary: >
+#        In SCM-Manager 2 können individuelle Rollen erstellt werden.
+#        Dafür stehen alle Aktionen aus SCM-Manager zur Auswahl um die exakt passenden Rollen zu erstellen.
+#      link: https://www.scm-manager.org/docs/latest/de/user/admin/roles/
+#    - title: API Schlüssel
+#      summary: >
+#        Um externe System wie einen Jenkins zu berechtigen, müssen Sie nicht unbedingt technische Benutzer anlegen.
+#        Stattdessen können Sie API Schlüssel mit einem begrenzenden Set an Berechtigungen erstellen.
+#      link: https://www.scm-manager.org/docs/2.16.x/de/user/profile/#api-schl%C3%BCssel
+#    - title: Pfadbasierte Suche
+#      summary: >
+#        Nutzen Sie die Suchfunktion im oberen Teil der Repository Code Übersicht, um Dateien oder Ordner anhand des Pfades (nicht inhaltlich) in Ihrem Repository zu suchen.
+#      link: https://www.scm-manager.org/docs/2.16.x/de/user/repo/code/#dateinamen-suche
+#    - title: Export/Import
+#      summary: >
+#        Nutzen Sie die Export-/Import-Funktion, um Repositories inklusive aller Metadaten zwischen SCM-Manager-Instanzen
+#        zu übertragen oder Ihr Repository von einem anderen System zu importieren, indem Sie einfach die URL angeben.
+#      link: https://www.scm-manager.org/docs/2.16.x/de/user/repo/#repository-importieren
 
   plugins:
     - title: LDAP
