@@ -1,10 +1,10 @@
 en:
   features:
-    - title: DevStarter
+    - title: On-premises Toolchain
       summary: >
         Easily run SCM-Manger together with other tools on-premises on one platform: Project management with Easy Redmine, knowledge management with BlueSpice, builds with Jenkins and more.
       link: https://partner.cloudogu.com/en/devstarter/?source=scmmtile
-    - title: DevStarter
+    - title: On-premises Toolchain
       summary: >
         The DevStarter toolchain around SCM-Manager features many helpful tools: Project Management with Easy Redmine, Wiki with BlueSpice, CI Server Jenkins and more, all on-premises in one platform.
       link: https://partner.cloudogu.com/en/devstarter/?source=scmmtile
@@ -114,11 +114,11 @@ en:
 
 de:
   features:
-    - title: DevStarter
+    - title: On-premises Toolchain
       summary: >
         SCM-Manger ganz einfach zusammen mit anderen Tools on-premises auf einer Plattform betreiben: Projektmanagement mit Easy Redmine, Wissensmanagment mit BlueSpice, Builds mit Jenkins und mehr.
       link: https://partner.cloudogu.com/de/devstarter/?source=scmmtile
-    - title: DevStarter
+    - title: On-premises Toolchain
       summary: >
         Die DevStarter Toolchain um SCM-Manager bietet viele hilfreiche Tools: Projektmanagement mit Easy Redmine, Wiki mit BlueSpice, CI Server Jenkins und mehr, alles on-premises in einer Plattform.
       link: https://partner.cloudogu.com/de/devstarter/?source=scmmtile
