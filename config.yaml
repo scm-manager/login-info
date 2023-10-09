@@ -34,17 +34,17 @@ en:
 #      summary: >
 #        You don't have to create technical users for other systems like Jenkins.
 #        Instead you can create API keys with a limited set of permissions.
-#      link: https://www.scm-manager.org/docs/2.16.x/en/user/profile/#api-keys
+#      link: https://www.scm-manager.org/docs/latest/en/user/profile/#api-keys
 #    - title: Pathbased Search
 #      summary: >
 #        Use the search button on top of the source tree view to quickly find your files or directories based on the path (but not the content) inside your repository.
-#      link: https://www.scm-manager.org/docs/2.16.x/en/user/repo/code/#search
+#      link: https://www.scm-manager.org/docs/latest/en/user/repo/code/#search
 #    - title: Export/Import
 #      summary: >
 #        Use the export/import feature to transfer repositories including all metadata between SCM-Manager
 #        instances or to import your favourite repository from another system just by
 #        specifying the URL.
-#      link: https://www.scm-manager.org/docs/2.16.x/en/user/repo/#import-a-repository
+#      link: https://www.scm-manager.org/docs/latest/en/user/repo/#import-a-repository
 #    - title: Command line client
 #      summary: >
 #        Try the cli client for SCM-Manager to manage your repositories. It is available for all kinds of operation systems.
@@ -146,16 +146,16 @@ de:
 #      summary: >
 #        Um externe System wie einen Jenkins zu berechtigen, müssen Sie nicht unbedingt technische Benutzer anlegen.
 #        Stattdessen können Sie API Schlüssel mit einem begrenzenden Set an Berechtigungen erstellen.
-#      link: https://www.scm-manager.org/docs/2.16.x/de/user/profile/#api-schl%C3%BCssel
+#      link: https://www.scm-manager.org/docs/latest/de/user/profile/#api-schl%C3%BCssel
 #    - title: Pfadbasierte Suche
 #      summary: >
 #        Nutzen Sie die Suchfunktion im oberen Teil der Repository Code Übersicht, um Dateien oder Ordner anhand des Pfades (nicht inhaltlich) in Ihrem Repository zu suchen.
-#      link: https://www.scm-manager.org/docs/2.16.x/de/user/repo/code/#dateinamen-suche
+#      link: https://www.scm-manager.org/docs/latest/de/user/repo/code/#dateinamen-suche
 #    - title: Export/Import
 #      summary: >
 #        Nutzen Sie die Export-/Import-Funktion, um Repositories inklusive aller Metadaten zwischen SCM-Manager-Instanzen
 #        zu übertragen oder Ihr Repository von einem anderen System zu importieren, indem Sie einfach die URL angeben.
-#      link: https://www.scm-manager.org/docs/2.16.x/de/user/repo/#repository-importieren
+#      link: https://www.scm-manager.org/docs/latest/de/user/repo/#repository-importieren
 
   plugins:
     - title: LDAP
