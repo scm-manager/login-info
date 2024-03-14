@@ -111,6 +111,13 @@ en:
         the repository template plugin. Create your own templates with a simple templating mechanism and never have
         to add the same files over and over again.
       link: https://scm-manager.org/plugins/scm-repository-template-plugin/
+    - title: Custom Storage Plugin
+      summary: >
+        With the update from version 1 to 2, SCM-Manager changed its storage layout. The paths where
+        repositories are stored no longer match their names. With the custom storage plugin, you
+        can find out where repositories are stored, you can change these paths, and also change the
+        defaults for new repositories.
+      link: https://scm-manager.org/plugins/scm-custom-storage-plugin/
 
 de:
   features:
@@ -218,3 +225,11 @@ de:
         Dieses kann mit dem Repository Template Plugin erreicht werden. Erstellen Sie Ihre eigenen Templates mit einem einfachen
         Mechanismus und Sie müssen nie mehr Standarddateien erstellen.
       link: https://scm-manager.org/plugins/scm-repository-template-plugin/
+    - title: Custom Storage Plugin
+      summary: >
+        Mit dem Update von Version 1 auf 2 wurde im SCM-Manager das Speicherlayout für Repositories geändert. Die Pfade, in
+        denen Repositories gespeichert werden, entsprach nicht mehr deren Namen. Mit dem "Custom Storage Plugin" können nun
+        die Pfade abgefragt und verändert werden und es ist darüber hinaus möglich, den Standard für neue Repositories
+        an eigene Bedürfnisse anzupassen.
+      link: https://scm-manager.org/plugins/scm-custom-storage-plugin/
+
