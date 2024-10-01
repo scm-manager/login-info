@@ -78,7 +78,7 @@ pipeline {
     
     stage('Update GitHub') {
       when {
-        branch pattern: 'release/*', comparator: 'GLOB'
+        branch pattern: 'master', comparator: 'GLOB'
 	    expression { return isBuildSuccess() }
       }
       steps {
