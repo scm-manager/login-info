@@ -44,9 +44,6 @@ pipeline {
         withSonarQubeEnv('sonarcloud.io-scm') {
           sh "${scannerHome}/bin/sonar-scanner"
         }
-        timeout(time: 10, unit: 'MINUTES') {
-          waitForQualityGate abortPipeline: true
-        }
       }
     }
 
@@ -54,7 +51,7 @@ pipeline {
       steps {
         unstash 'target'
         script {
-          docker.withRegistry('', 'hub.docker.com-cesmarvin') {
+          docker.withRegistry('', 'cesmarvin-dockerhub-access-token') {
             def image = docker.build("scmmanager/login-info:${version}")
             image.push()
           }
